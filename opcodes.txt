@@ -1,0 +1,9 @@
+ALU select:
+000 = add
+001 = subtract
+010 = shift left
+011 = shift right
+100 = arth right
+101 = NOT
+110 = OR
+111 = AND

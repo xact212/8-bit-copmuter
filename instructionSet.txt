@@ -1,0 +1,25 @@
+0 lw ma -> dr : assert address lines for memory address ma and put contents into destination register dr
+1 ww sr -> ma : write source register sr contents into memory address ma
+2 add (sr1, sr2) -> dr : write sum of source register 1 and source register 2 into destination register dr
+3 sub (sr1, sr2) -> dr : add two's comp + 1 of source register 2 to source register 1 into destination register dr
+4 not sr -> dr : invert all bits of source register and put result into destination register
+5 and (sr1, sr2) -> dr : and bits of sr1 with sr2 and put result into destination register
+6 or (sr1, sr2) -> dr : or bits of sr1 with sr2 and put result into destination register
+7 lshift (sr, shamt) : left shift all bits in source register sr by shift amount shamt and put result back into source register
+8 rshift (sr, shamt) : right shift all bits in source register sr by shift amount shamt and put result back into source register
+9 arthright (sr, shamt) : arithmetic right shift all bits in source register sr by shift amount and put result back into source register
+10 jump ma : load memory address ma into instruction register, alias for lw
+11 jumplt ma : load memory address ma into instruction register if less than flag in alu is high
+12 jumpeq ma : load memory address ma into instruction register if eq flag in alu is high
+13 addi (sr1, i) -> dr :
+
+opcode r1 r2 r3
+
+registers:
+sp stack pointer
+ra return address
+pc program counter
+ir instruction register
+ac accumulator
+in in/out register
+g0, g1, g2 general purpose registers
